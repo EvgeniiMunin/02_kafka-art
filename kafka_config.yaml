@@ -1,0 +1,12 @@
+kafka_broker:
+  bootstrap_servers: "pkc-2396y.us-east-1.aws.confluent.cloud:9092"
+  security_protocol: "SASL_SSL"
+  sasl_mechanisms: "PLAIN"
+  sasl_username: "PPKE2IVDGTWJSKBS"
+  sasl_password: "jcoWhJTcD8jS+caHbwt5ExsGeYyTFv9TeT/g8X/TWBAGbm1vVZ34xEmL/tasWJel"
+  train_topic: "train"
+  predict_topic: "app_messages"
+
+kafka_consumer:
+  group_id: "mygroup"
+  auto_offset_reset: "earliest"
